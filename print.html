@@ -6,7 +6,10 @@
     <title>Print PDF</title>
 </head>
 <body>
-    <iframe id="pdfFrame" src="https://drive.google.com/file/d/1zC9Byx1Gq4mn_-naKB-u1z3fnuDwLh8v/view?usp=drive_link" style="display:none;"></iframe>
+    <!-- Hidden iframe to load the PDF -->
+    <iframe id="pdfFrame" src="https://drive.google.com/file/d/1zC9Byx1Gq4mn_-naKB-u1z3fnuDwLh8v/preview" style="display:none;"></iframe>
+
+    <!-- JavaScript to trigger printing -->
     <script>
         window.onload = function() {
             const iframe = document.getElementById('pdfFrame');
